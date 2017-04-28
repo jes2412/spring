@@ -7,32 +7,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!--   <link rel="stylesheet" href="grid-guide.css">   -->
-<link rel="stylesheet" href="/webApp/css/beanInfo.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="/webApp/js/beanJs.js"></script>
+<script src="/webApp/js/arrowForSingle.js"></script>
+<!--    <link rel="stylesheet" href="grid-guide.css">       -->
+ <link rel="stylesheet" href="/webApp/css/beanInfo.css">
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
-<script>
-	$(document).ready(function() {
-		var leftArr =  $("#arrow_left");
-		var rightArr = $("#arrow_right");
-		$slider = $(".box6-inner");
-		var left = $slider.css("left");
-		left = parseFloat(left);
-		
-		rightArr.on("click", function() {
-			if(left>-1800){
-				left -=150;
-				$slider.css("left", left);
-			}
-		})
-		leftArr.on("click", function() {
-			if(left<0){
-				left += 150;
-				$slider.css("left", left)
-			}
-		})
-	});
- </script>
+<link rel="stylesheet" href="/webApp/css/pentagon.css">
 </head>
 <body>
 <%@ include file="include/header.jspf"%>

@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="http://d3js.org/d3.v3.js"></script>
-<script src="/webApp/js/beanJs.js"></script>
+<script src="/webApp/js/jsForSingle.js"></script>
 <!--    <link rel="stylesheet" href="grid-guide.css">       -->
  <link rel="stylesheet" href="/webApp/css/orderStyle.css">
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">

@@ -50,7 +50,7 @@
 		<a>2</a>
 		<a>3</a>
 	</div>
-	<span id="write"><a href="/webApp/write?category=${category}">글쓰기</a></span>	
+	<span id="write"><a href="/webApp/write?category=community">글쓰기</a></span>	
  </div>
 </div>
 

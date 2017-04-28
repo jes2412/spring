@@ -21,4 +21,8 @@
 	<update id="updateCusRecord" parameterType="com.ikosmo.webApp.member.MemberVO">
 		update user_roster set userRate=#{userRate} where userId=#{userId}
 	</update>
+	<update id="updateCusRecordForUser" parameterType="com.ikosmo.webApp.member.MemberVO">
+		update user_roster set userPwd=#{userPwd}, tel=#{tel}, zipCode=#{zipCode}, address1=#{address1}, address2=#{address2},
+		email=#{email}, homeTel=#{homeTel} where userId=#{userId}
+	</update>
 </mapper>

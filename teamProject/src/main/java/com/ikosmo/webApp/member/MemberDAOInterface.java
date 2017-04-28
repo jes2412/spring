@@ -13,6 +13,8 @@ public interface MemberDAOInterface {
 	public int deleteRecord(String userId);
 	//개별회원 상세조회
 	public MemberVO selectRecord(String userId);
-	//회원정보 업데이트
+	//회원정보 업데이트(관리자측)
 	public int updateCusRecord(MemberVO vo);
+	//회원정보 업데이트(사용자측)
+	public int updateCusRecordForUser(MemberVO vo);
 }
