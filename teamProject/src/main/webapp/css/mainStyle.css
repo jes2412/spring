@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+
+/* 초기화 */
+* {margin: 0; padding: 0}
+body{margin:0;padding:0;width:100%;}
+
+/* 타이틀 위치 지정*/
+.box1:after {content: ""; display: block; clear: both}
+.box1-1, .box1-2 {width: 50%; float: left}
+
+/* 타이틀 좌측로고 */
+.box1-1 h1 a {color: black; text-decoration: none; }
+
+/* 타이틀 우측 로그인등 */
+.box1-2 ul:after {content: ""; display: block; clear: both}
+.box1-2 ul {float:right;list-style: none; margin-top: 10px}
+.box1-2 li {float: left}
+.box1-2 li a {color: black; text-decoration: none; padding: 5px; font-weight: bold}
+.box1-2 li a:hover {background-color: #eeeeee; }
+ 
+/* 메뉴바 */
+.box2 {background:#6a737b;padding:10px 0px; display: block;}
+.box2:after {content: ""; display: block; clear: both;}
+.box2 ul:after {content: ""; display: block; clear: both;}
+.box2 li {float: left;list-style: none; font-size: 18px;}
+.box2 li a {color: #ffffff; padding: 5px 25px;text-decoration: none}
+
+/* 메뉴바 호버 스타일 */
+.box2 li a { border-bottom: 3px solid rgba(255,255,255,0);}
+.box2 li a:hover {border-bottom: 3px solid #ffffff; transition-duration:1s}
+
+/* 메뉴바 가운데 정렬 */
+.box2-inner {display: block; text-align: center;}
+.box2-inner ul {display: inline-block;text-align: center}
+
+/* 메인 상단 슬라이드 */
+.box3 {width: 100%; height: 400px; position: relative; margin: 20px 0px}
+.box3 img {width: 100%; height: 400px; position: absolute;}
+
+/* 메인 중단 베스트 셀러(원두) 배치*/
+.box6 {margin: 20px 0px; padding-bottom:10px; border-bottom: 2px solid black }
+.box6:after {content: ""; display: block; clear: both}
+.box6-1, .box6-2, .box6-3 {width: 33.3333%; float: left; }
+.box6 img {width: 100%; height: auto}
+.box6 .text {text-align: center}
+.box6 a {color: black; text-decoration: none}
+.box6 a:hover div{background-color: #eeeeee}
+
+/* 메인하단 Best 조합 */
+
+/* 오더 첫줄 div 배치 (원두 선택, 원두 목록) */
+.box7 {margin-top: 20px}
+.box7  li{list-style: none}
+.box7:after {content: ""; display: block; clear: both;}
+.box7-1 {float: left; width: 30%;}
+.box7-2 {float: left;width: 40%}
+.box7-3{float: left; width: 30%}
+
+/* 내가 선택한 원두 */
+.box7-1 li {text-decoration: none; color: black; font-size: 20px;}
+.box7-1 li hover {background-color: #eeeeee}
+.box7-1 li  input{width: 40px}
+.box7-1 .inputAndIcon {display: inline-block;float: right; margin-right: 10px;}
+.box7-1 .inputAndIcon a {text-decoration: none; color: black;}
+.box7-1 .inputAndIcon i {margin-left: 10px ;}
+
+/* 원두리스트 */
+.box7-2-inner ul {display: table; margin: 0 auto}
+.box7-2-inner img {width: 100px; height: 100px;}
+.box7-2 {margin-bottom: 10px;}
+.box7-2-inner ul:after {content: ""; display: block; clear: both}
+.box7-2-inner li {float: left; list-style: none; }
+
+/* 원두리스트 옆에 추천수랑 가격등 */
+.box7-3-inner {margin-top: 30px ;}
+
+/* 원두리스트 옆에 픽업 배지 */
+.badge {width: 120px; height: 120px; background: #00a0e9; color: #ffffff; border-radius: 60px; box-shadow: 0 0 4px #aaaaaa;
+padding-top: 25px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; text-align: center;}
+.badge i {display: block; font-size: 40px}
+.pickup {position: relative;}
+.badge {position: absolute; top: -50px; right: 30px}
+
+
+/* 오더 2번째라인 div 배치 (오각형, 로스팅바, 원두 상세) */
+.box8 {margin-top: 20px; border-bottom: 3px solid gray}
+.box8:after {content: "";display: block; clear: both}
+.box8-1 {float: left; padding: 0px 10px; -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box}
+.box8-2 {float: left; padding: 0px 10px; -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box}
+.box8-3 {float: left; padding: 0px 10px; -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box}
+.box8-4{float: left; padding: 0px 10px; -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box}
+
+/* 오더 2번째라인 원두정보 */
+.box8-3 {width: 215px; height: 250px; border-left: 2px solid #eeeeee}
+.box8-3 ul {margin-top: 5px;}
+.box8-3 li {list-style: none; padding: 5px 0; display: block; padding-left: 20px}
+
+/* 오더 2번째라인 우측 버튼들 */
+.box8-4 {width: 215px; height: 250px; }
+.box8-4 li {list-style: none; width: 180px;padding-left: 20px; }
+.box8-4 li a {display: block;padding:10px; text-decoration: none; color: white}
+.box8-4 li a:hover {background-color: black; transition-duration:1s}
+.buyBtn {display: inline-block;margin-top:30%;margin-bottom:10px ;padding:20px 0px;background-color: #9e1e21; font-size: 24px; font-weight: bold; text-align: center;}
+.cartBtn {display: inline-block;margin-bottom:30%;padding:20px 0px;background-color: gray; font-size: 24px; font-weight: bold; text-align: center;}
+
+
+/* footer 정렬 */
+.box4 {font-size: 14px; padding-top: 30px;background-color: #eeeeee}
+.box4:after {content: ""; display: block; clear: both}
+.box4 div {float:left; width: 33.3333%}
+
+/* footer 좌측 */
+.box4-1 {padding-left: 20px;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;
+	box-sizing: border-box}
+
+/* footer 가운데 */
+.box4-2 {padding: 0 10px;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;
+	box-sizing: border-box}
+
+/* footer 우측 sns */
+.box4-3 {padding-right: 20px;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box}
+.box4 ul	{max-width:150px;margin: 0;	padding: 0;	list-style: none}
+.box4 li a	{display: block;margin-bottom: 5px;padding: 5px;border-radius: 4px;color: #ffffff;	font-size: 14px;text-decoration: none;}
+.box4 li a:hover	{opacity: 0.8}
+.follow-yt	{background-color: #da4b3c;}
+.follow-tw	{background-color: #63bafb}
+.follow-fb	{background-color: #5288f7}
+
+.box4 i	{margin-right: 10px;font-size: 24px;vertical-align: middle}
+
+/* 카피라이트 */
+.box5 {padding: 15px 0 15px; display: block;background-color: #dddddd;text-align: center}
+
+@media (min-width:1040px){
+	/* 전제 넓이 고정 */
+	.box1, .box3, .box6, .box7, .box8, .box4, .box5 {width: 1030px;margin-left: auto;margin-right: auto}
+}

@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
+<footer>
+<div class="box4">
+	<div class="box4-1">
+		<h3>Roster</h3>
+		<p>M/V, Viral, CM, SNS Video, PR Movie & Brand Film,<br/>Creative Moving Image Creation.</p>
+	</div>
+	<div class="box4-2">
+		<h3>Contacts</h3>
+		<p>+82(0)10-9355-9041</p>
+	</div>
+	<div class="box4-3">
+		<h3>Social Network</h3>
+		<ul>
+			<li><a href="#" class="follow-tw">
+				<i class="fa fa-fw fa-twitter"></i>
+				Twitter
+			</a></li>
+			<li><a href="#" class="follow-fb">
+				<i class="fa fa-fw fa-facebook"></i>
+				Facebook
+			</a></li>
+						<li><a href="#" class="follow-yt">
+						<i class="fa fa-fw  fa-youtube-play"></i>
+						Youtube
+				</a></li>
+		</ul>
+	</div>
+</div>
+<div class="box5">
+	<h5>since 2017 copyright(c) FOXENTERTAINMENT All rights reserved</h5>
+	<h5><a href="/webApp/admin/login">관리자 로그인</a></h5>
+</div>
+</footer>

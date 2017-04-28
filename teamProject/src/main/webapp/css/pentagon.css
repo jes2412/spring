@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+.svg-pentagon {text-align: center;}
+ .svg-pentagon svg {}
+.pentagon {
+            stroke-width:0.5px
+            -webkit-transform:rotate(36deg);
+            -moz-transform:rotate(36deg);
+            //transform:rotate(36deg);
+        }
+        .pentagon-1 {
+            fill: rgba(220,198,175, .5);
+        }
+        .pentagon-2 {
+            fill: rgba(209,180,152, .5);
+        }
+        .pentagon-3 {
+            fill: rgba(202,166,134, .5);
+        }
+        .pentagon-4 {
+            fill: rgba(186,140,98, .5);
+        }
+        .pentagon-5 {
+            fill: rgb(173,123,78);
+            stroke-width: 1px;
+            stroke: rgba(0, 0, 0,.5);
+        }
+        .pentagonAbility {
+            /*fill: #F17D61;*/
+            fill: rgba(130,94,57,.5);
+            stroke-width: 3px;
+            stroke: rgba(130,94,57,.5);
+        }
+        text{font-size: 13px;}

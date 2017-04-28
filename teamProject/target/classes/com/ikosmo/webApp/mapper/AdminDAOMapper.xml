@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ikosmo.webApp.admin.AdminDAOInterface">
+	<select id="loginChk" resultType="com.ikosmo.webApp.admin.AdminVO" parameterType="com.ikosmo.webApp.admin.AdminVO">
+		select * from admin where adminId=#{adminId} and adminPwd=#{adminPwd}
+	</select>
+	<select id="selectAll" resultType="com.ikosmo.webApp.admin.AdminVO">
+		select * from admin order by adminId asc
+	</select>
+	<select id="insertRecord" parameterType="com.ikosmo.webApp.admin.AdminVO">
+		insert into admin values(#{adminId}, #{adminName}, #{adminPwd})
+	</select>
+	<delete id="deleteRecord" parameterType="String">
+		delete from admin where adminId=#{adminId}
+	</delete>
+	<update id="updateRecord" parameterType="com.ikosmo.webApp.admin.AdminVO">
+		update admin set adminName=#{adminName}, adminPwd=#{adminPwd} where adminId=#{adminId}
+	</update>
+	<select id="selectRecord" parameterType="String" resultType="com.ikosmo.webApp.admin.AdminVO">
+		select * from admin where adminId=#{adminId}
+	</select>
+</mapper>

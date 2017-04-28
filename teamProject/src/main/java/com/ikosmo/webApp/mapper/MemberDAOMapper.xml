@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ikosmo.webApp.member.MemberDAOInterface">
+	<select id="insertRecord" parameterType="com.ikosmo.webApp.member.MemberVO">
+		insert into user_Roster (userId, userName, userPwd, tel, zipCode, address1, address2, email, homeTel, join_date)
+		values(#{userId}, #{userName}, #{userPwd}, #{tel}, #{zipCode:VARCHAR}, #{address1}, #{address2}, #{email}, #{homeTel}, sysdate)
+	</select>
+	<select id="loginChk" parameterType="com.ikosmo.webApp.member.MemberVO" resultType="com.ikosmo.webApp.member.MemberVO">
+		select userId, userName, userRate from user_roster where userId = #{userId} and userPwd = #{userPwd}
+	</select>
+	<select id="selectAll" resultType="com.ikosmo.webApp.member.MemberVO">
+		select userId, userName, tel from user_roster
+	</select>
+	<delete id="deleteRecord" parameterType="String">
+		delete from user_roster where userId=#{userId}
+	</delete>
+	<select id="selectRecord" parameterType="String" resultType="com.ikosmo.webApp.member.MemberVO">
+		select * from user_roster where userId=#{userId}
+	</select>
+	<update id="updateCusRecord" parameterType="com.ikosmo.webApp.member.MemberVO">
+		update user_roster set userRate=#{userRate} where userId=#{userId}
+	</update>
+</mapper>

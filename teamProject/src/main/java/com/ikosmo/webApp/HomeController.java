@@ -35,5 +35,16 @@ public class HomeController {
 		
 		return "home";
 	}
-	
+	@RequestMapping("aboutUs")
+	public String aboutUs(){
+		return "aboutUs";
+	}
+	@RequestMapping("beanInfo")
+	public String beanInfo(){
+		return "beanInfo";
+	}
+	@RequestMapping("order")
+	public String Order(){
+		return "order";
+	}
 }

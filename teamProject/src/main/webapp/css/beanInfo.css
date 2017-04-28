@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+/* 초기화 */
+* {margin: 0; padding: 0}
+body{margin:0;padding:0;width:100%;font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif}
+
+/* 타이틀 위치 지정*/
+.box1:after {content: ""; display: block; clear: both}
+.box1-1, .box1-2 {width: 50%; float: left}
+
+/* 타이틀 좌측로고 */
+.box1-1 h1 a {color: black; text-decoration: none; }
+
+/* 타이틀 우측 로그인등 */
+.box1-2 ul:after {content: ""; display: block; clear: both}
+.box1-2 ul {float:right;list-style: none; margin-top: 10px}
+.box1-2 li {float: left}
+.box1-2 li a {color: black; text-decoration: none; padding: 5px; font-weight: bold}
+.box1-2 li a:hover {background-color: #eeeeee; }
+ 
+/* 메뉴바 */
+.box2 {background:#6a737b;padding:10px 0px; display: block;}
+.box2:after {content: ""; display: block; clear: both;}
+.box2 ul:after {content: ""; display: block; clear: both;}
+.box2 li {float: left;list-style: none; font-size: 18px;}
+.box2 li a {color: #ffffff; padding: 5px 25px;text-decoration: none}
+
+/* 메뉴바 호버 스타일 */
+.box2 li a { border-bottom: 3px solid rgba(255,255,255,0);}
+.box2 li a:hover {border-bottom: 3px solid #ffffff; transition-duration:1s}
+
+/* 메뉴바 가운데 정렬 */
+.box2-inner {display: block; text-align: center;}
+.box2-inner ul {display: inline-block;text-align: center}
+
+/* 메인 빈 슬라이드 */
+.box6 {margin-bottom: 10px; position: relative;height: 150px;overflow: hidden;}
+.box6-inner {width: 2850px; position: absolute;}
+.box6-inner ul:after {content: ""; display: block; clear: both}
+.box6-inner li {float: left; list-style: none; }
+
+/* 메인 빈 슬라이드 아이콘 */
+.box6-arrow i{position: absolute;top: 50px;font-size: 48px;opacity :0.8;color: gray;display: table;z-index: 5}
+.box6-arrow i:nth-of-type(1) {left:10px}
+.box6-arrow i:nth-of-type(2) {right: 10px}
+/* 메인 빈 이미지 */
+.box6 img {width: 150px; height: 150px;}
+
+/* 메인 상품상세  내부 배치*/
+.box7:after {content: ""; display: block; clear: both}
+.box7-1, .box7-2 {width: 50%; float: left}
+
+/* 메인 상품상세 좌측 이미지 */
+.box7-1 img {width: 100%; height: auto}
+
+/* 메인 상품상세 우측 설명 */
+.box7-2 h1 {display: block; text-align: center; padding: 5px 0px;border-bottom: 2px solid black}
+.box7-2 ul {content: ""; display: block; clear: both;}
+.box7-2 li {float: left; list-style: none;padding-top: 5px; padding-bottom: 5px;border-bottom: 2px solid #eeeeee}
+.box7-2 .left { width: 30%;	padding-left: 20px;	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box}
+.box7-2 .right {width: 70%;}
+.box7-2 .center {width: 20%;}
+.box7-2 .last {width:50%;margin-bottom: 10px}
+.box7-2 h2 {padding-left: 20px; padding-bottom: 20px;	-moz-box-sizing: border-box;-webkit-box-sizing: border-box;	box-sizing: border-box;border-bottom: 2px solid #eeeeee}
+
+/* 메인 상품상세 버튼 */
+.buttons {width: 250px; height: 120px ; margin: 0 auto;margin-top: 50px;}
+.buyBtn {display: block;padding:20px 0px;background-color: #9e1e21; font-size: 24px; font-weight: bold; text-align: center;}
+.buttons a {color: white; text-decoration: none}
+.btn2nd:after {content: ""; display: block; clear: both}
+.btn2nd { display: block; width: 100%; margin-top:3px ;font-size: 14px;}
+.btn2nd a {display: inline-block;width: 81px; text-align: center; padding-top: 10px;padding-bottom: 10px;background-color: gray;}
+#QA {width: 82px }
+#wishList {margin-left: 3px; margin-right: 3px }
+
+/* 메인 상품 상세 버튼 호버 */
+.buttons a:hover {background-color: black; transition-duration:1s}
+
+/* footer 정렬 */
+.box4 {font-size: 14px; padding-top: 30px;background-color: #eeeeee}
+.box4:after {content: ""; display: block; clear: both}
+.box4 div {float:left; width: 33.3333%}
+
+/* footer 좌측 */
+.box4-1 {padding-left: 20px;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;
+	box-sizing: border-box}
+
+/* footer 가운데 */
+.box4-2 {padding: 0 10px;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;
+	box-sizing: border-box}
+
+/* footer 우측 sns */
+.box4-3 {padding-right: 20px;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box}
+.box4 ul	{max-width:150px;margin: 0;	padding: 0;	list-style: none}
+.box4 li a	{display: block;margin-bottom: 5px;padding: 5px;border-radius: 4px;color: #ffffff;	font-size: 14px;text-decoration: none;}
+.box4 li a:hover	{opacity: 0.8}
+.follow-yt	{background-color: #da4b3c;}
+.follow-tw	{background-color: #63bafb}
+.follow-fb	{background-color: #5288f7}
+
+.box4 i	{margin-right: 10px;font-size: 24px;vertical-align: middle}
+
+/* 카피라이트 */
+.box5 {padding: 15px 0 15px; display: block;background-color: #dddddd;text-align: center}
+
+@media (min-width:1040px){
+	/* 전제 넓이 고정 */
+	.box1, .box4, .box5, .box6, .box7 {width: 1030px;margin-left: auto;margin-right: auto}
+}

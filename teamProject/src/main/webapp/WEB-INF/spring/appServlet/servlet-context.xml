@@ -14,6 +14,9 @@
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
+	<resources mapping="/img/**" location="/img/" />
+	<resources mapping="/css/**" location="/css/" />
+	<resources mapping="/js/**" location="/js/" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -22,7 +25,21 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.ikosmo.webApp" />
-	
-	
-	
+		<!-- DataSource 객체 만들기 -->
+	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<beans:property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+		<beans:property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+		<beans:property name="username" value="scott"/>
+		<beans:property name="password" value="tiger"/>			
+	</beans:bean>	
+		<!-- Mybatis 프레임워크를 사용하기 위해선 sqlSessionFactory 객체를 생성하고
+			sqlSessionFactory 객체를 매개변수로 설정한 sqlSession 객체를 만들어야한다. -->
+	<beans:bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<beans:property name="dataSource" ref="dataSource"></beans:property>
+		<beans:property name="mapperLocations" value="classpath:com/ikosmo/webApp/mapper/*.xml"></beans:property>
+	</beans:bean>
+	<beans:bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<beans:constructor-arg  ref="sqlSessionFactory"></beans:constructor-arg>
+	</beans:bean>
+	<!-- Mybatis End -->
 </beans:beans>

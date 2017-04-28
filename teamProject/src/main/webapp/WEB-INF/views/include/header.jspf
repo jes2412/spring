@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
+<header>
+<div class="box1">
+	<div class="box1-1">
+		<h1><a href="/webApp/">Roster</a></h1>
+	</div>
+	<div class="box1-2">
+		<ul>
+			<c:if test="${empty sesUserName}">
+			<li><a href="/webApp/member/login">로그인</a></li>
+			</c:if>
+			<c:if test="${not empty sesUserName}">
+			<li>${sesUserName} 님 로그인 중
+			<li><a href="/webApp/member/logout">로그아웃</a></li>
+			</c:if>
+			<li><a href="/webApp/cart">장바구니</a></li>
+			<li><a href="/webApp/myPageUpdate">마이페이지</a></li>
+		</ul>
+	</div>
+</div>
+	<div class="box2">
+		<div class="box2-inner">
+			<ul>
+				<li><a href="/webApp/aboutUs">About us</a></li>
+				<li><a href="/webApp/beanInfo">원두정보</a></li>
+				<li><a href="/webApp/order">Order</a></li>
+				<li><a href="/webApp/community">Community</a></li>
+				<li><a href="/webApp/oneAndOne">1:1 문의</a></li>
+				<li><a href="/webApp/notice">공지사항</a></li>
+			</ul>
+		</div>
+	</div>
+</header>

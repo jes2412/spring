@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ikosmo.webApp.board.BoardDAOInterface">
+	<select id="selectAll" resultType="com.ikosmo.webApp.board.BoardVO" >
+		select bbsNum,category, title, userId, writeDate, hit from bbs order by bbsNum desc
+	</select>
+	<insert id="insertRecord" parameterType="com.ikosmo.webApp.board.BoardVO">
+		insert into bbs values(bbsSQ.nextval, #{userId}, #{category}, #{title}, #{content}, 0, sysdate, #{ip}, 0)
+	</insert>
+	<select id="selectRecord" resultType="com.ikosmo.webApp.board.BoardVO" parameterType="int">
+		select * from bbs where bbsNum=#{parm1}
+	</select>
+	<delete id="deleteRecord" parameterType="int">
+		delete from bbs where bbsNum=#{param1}
+	</delete>
+	<update id="updateRecord" parameterType="com.ikosmo.webApp.board.BoardVO">
+	 update bbs set title=#{title}, content=#{content} where bbsNum=#{bbsNum}
+	</update>
+	<select id="selectOneAndOne"  resultType="com.ikosmo.webApp.board.BoardVO" parameterType="String" >
+		select bbsNum,category, title, userId, writeDate, hit from bbs where userId=#{param1} order by bbsNum desc
+	</select>
+</mapper>

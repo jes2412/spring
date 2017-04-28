@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body	{font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; margin: 0}
+
+/* 사이트 이름 */
+.site h1 a {color: #000000; text-decoration: none}
+.site h1 {margin: 0; font-size: 30px}
+.site img {border: none}
+
+/* 추가 설명 */
+.follow p {margin-top: 0; margin-bottom: 20px; padding: 10px; background-color: #dddddd; font-size: 14px; text-align: center}
+.follow-info {	position: relative;background: #dddddd;}
+.follow-info:after {top: 100%;	left: 80%;	border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;border-color: rgba(221, 221, 221, 0);
+	border-top-color: #dddddd;border-width: 15px;	margin-left: -15px;}
+/* 저작권 */
+.authorization p {margin: 0; color: #666666; font-size: 14px;float: right;}
+.authorization:after {content: ""; display: block; clear: both;}
+ 
+/* BOX5를 바 형태로 디자인 */
+.box5 {padding-top:15px;padding-bottom:15px;background-color: #dddddd}
+
+/* 박스의 왼쪽, 오른쪽 */
+.boxA, .box3, .box5{padding-left:15px; padding-right: 15px}
+
+/* 박스의 위아래 */
+.boxA {padding-top: 20px; padding-bottom: 10px}
+.box4 {padding-top: 20px; padding-bottom: 20px}
+
+
+/* 599px 이하 */
+@media(max-width : 599px){
+	/* 내비게이션 */
+	.menu li a {padding: 10px 7px; font-size: 11px}
+}
+
+/* 767px 이하 */
+@media(max-width: 767px){
+	/* 토글 버튼 */
+	#menubtn {padding: 6px 12px; border: 1px solid #aaaaaa; border-radius:5px; background-color: #ffffff;position: absolute; top:20px; right: 15px; cursor: pointer}
+	#menubtn:hover {background-color: #dddddd}
+	#menubtn:focus {outline: none}
+	#menubtn i {color: #888888; font-size: 18px}
+	#menubtn span {display: inline-block; text-indent: -9999px}
+	
+	/* 내비게이이션 메뉴 (세로 정렬) */
+	#menu {display: none}
+	.menu ul {margin: 0; padding: 0; list-style: none}
+	.menu li a {display: block; padding: 5px; color: #000000; font-size: 14px; text-decoration: none}
+	.menu li a:hover {background-color: #eeeeee}	
+}
+/* 관리자 관리 테이블 */
+.customerTable {width: 100%;}
+.customerTable .info {width: 30%}
+.customerTable .field {width: 70%}
+.customerTable .btn {width: 50%}
+
+
+/* 768px 이상 */
+@media(min-width : 768px){
+	/* 토글 버튼 */
+	#menubtn {display: none}
+	
+	/* 내비게이션 */
+	.menu {display: block !important}
+	.menu ul {margin: 0; padding: 0; list-style: none}
+	.menu li a {display: block; padding: 10px 5px; color: #000000; font-size: 14px; text-decoration: none}
+	.menu li a:hover {background-color: #eeeeee}
+	.menu ul:after {content: ""; display: block; clear: both;}
+	.menu li {float: left; width: auto}
+	
+	/* BOX1과 BOX2를 가로 정렬하는 설정 */
+	.boxA:after {content: ""; display: block; clear: both}
+	.box1 {float: left; width: auto}
+	.box2 {float: right; width: auto}
+}
+
+/* 1190px 이상 */
+@media(min-width : 1190px){
+	/* 전체 너비를 고정 */
+	.box3, .box5-inner, .boxA-inner, .box6 {width: 1140px; margin-left: auto; margin-right: auto}
+	/* BOX A 아래에 테두리 삽입 */
+	.boxA {margin-bottom: 20px; border-bottom: 1px solid black}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
